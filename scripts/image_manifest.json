@@ -56,7 +56,7 @@
   ]
  },
  "kiymali-pide": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.32 (3).jpeg",
+  "source": "WhatsApp Image 2026-11-04 at 14.42.32 (2).jpeg",
   "widths": [
    480,
    1024
@@ -85,13 +85,6 @@
  },
  "iskender-bol-soslu": {
   "source": "WhatsApp Image 2026-11-04 at 14.42.33 (3).jpeg",
-  "widths": [
-   480,
-   1024
-  ]
- },
- "durum": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.33 (4).jpeg",
   "widths": [
    480,
    1024
@@ -307,10 +300,186 @@
   ]
  },
  "et-sis-durum": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.34.jpeg",
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   362,
+   690,
+   568,
+   815
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "adana-durum": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   135,
+   488,
+   345,
+   634
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222,
+  "erase": [
+   0,
+   116,
+   70,
+   146
+  ]
+ },
+ "urfa-durum": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   345,
+   508,
+   585,
+   632
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "kusbasili-pide": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   655,
+   520,
+   892,
+   632
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "kusbasili-kasarli-pide": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   855,
+   510,
+   1082,
+   628
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "kavurmali-kasarli-pide": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   855,
+   703,
+   1097,
+   838
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "coban-salata": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   95,
+   888,
+   334,
+   1048
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "yesil-salata": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   345,
+   1122,
+   562,
+   1272
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "kilo-kofte": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (4).jpeg",
+  "crop": [
+   640,
+   572,
+   826,
+   788
+  ],
+  "scale": 3,
   "widths": [
    480,
    1024
   ]
+ },
+ "kilo-pirzola": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (4).jpeg",
+  "crop": [
+   848,
+   562,
+   1056,
+   790
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "kilo-kanat": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (4).jpeg",
+  "crop": [
+   640,
+   850,
+   832,
+   1028
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "mercimek": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31.jpeg",
+  "crop": [
+   862,
+   258,
+   1100,
+   412
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
  }
 }
