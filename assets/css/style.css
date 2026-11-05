@@ -293,6 +293,11 @@ button.mi:hover img { transform: scale(1.1); }
 .site-footer__nav a { text-decoration: none; font-weight: 600; font-size: .95rem; }
 .site-footer__nav a:hover { color: var(--gold); }
 .site-footer__copy { font-size: .85rem; width: 100%; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .07); }
+.site-footer__credits { width: 100%; font-size: .8rem; }
+.site-footer__credits summary { cursor: pointer; font-weight: 600; }
+.site-footer__credits p { margin-block: .6rem; }
+.site-footer__credits li { margin-bottom: .25rem; overflow-wrap: anywhere; }
+.site-footer__credits a { text-decoration: underline; }
 
 /* --- Mobil hızlı erişim --- */
 .quickbar { display: none; }

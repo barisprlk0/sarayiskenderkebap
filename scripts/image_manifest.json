@@ -481,5 +481,119 @@
    1024
   ],
   "white": 222
+ },
+ "urfa-kebap": {
+  "web": "urfa-kebap.jpg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "beyti": {
+  "web": "beyti.jpg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "ali-nazik-doner": {
+  "web": "ali-nazik-doner.jpg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "tavuk-suyu": {
+  "web": "tavuk-suyu.jpg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "gobek-salata": {
+  "web": "gobek-salata.jpg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "coca-cola": {
+  "web": "coca-cola.jpg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "fanta": {
+  "web": "fanta.jpg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "salgam": {
+  "web": "salgam.jpg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "cappy": {
+  "web": "cappy.jpg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "ezme-salata": {
+  "source": "WhatsApp Image 2026-11-04 at 14.42.38 (1).jpeg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "tam-ekmek-doner": {
+  "source": "WhatsApp Image 2026-11-04 at 14.42.33.jpeg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "kasarli-doner-durum": {
+  "source": "WhatsApp Image 2026-11-04 at 14.42.34.jpeg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "sandwich-doner": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31.jpeg",
+  "crop": [
+   815,
+   755,
+   975,
+   850
+  ],
+  "white": 222,
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "ozel-lahmacun": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (1).jpeg",
+  "crop": [
+   815,
+   1030,
+   1088,
+   1170
+  ],
+  "white": 222,
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ]
  }
 }
