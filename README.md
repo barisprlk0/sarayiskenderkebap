@@ -25,7 +25,7 @@ Ardından tarayıcıda `http://localhost:8765` adresini açın.
 
 - **Telefon:** Tabela ve işletmenin Google kaydı.
 - **Adres, konum ve saatler:** İşletmenin Google kaydı (5 Kasım 2026'da okundu). Saatleri bir rehber sitesi de doğruluyor.
-- **Menü:** İşletmeden alınmış bir liste değildir. Fotoğraflardan ve kayıtlarda geçen ürünlerden seçildi; yemek adlarının çoğu fotoğrafa bakılarak verildi. Bu yüzden sitede "Sofradan seçmeler" olarak sunulur ve fiyat içermez.
+- **Menü:** İşletmenin basılı menüsü ve broşürü. Fiyatlar bilerek yazılmadı. Hangi fotoğrafın hangi ürüne ait olduğu görsellerden eşleştirildi.
 - **Mekân metinleri:** Dış mekân masaları, toplu yemek ve kuryeyle paket servis ifadeleri fotoğraflardan çıkarıldı.
 
-İşletme onayladığında menü `index.html` içindeki `#menu` bölümünden güncellenebilir.
+Menü `index.html` içindeki `#menu` bölümünden güncellenir.
