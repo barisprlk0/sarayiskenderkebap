@@ -21,13 +21,11 @@ Ardından tarayıcıda `http://localhost:8765` adresini açın.
 | `scripts/optimize_images.py` | Ham fotoğraflardan görselleri üretir (Pillow gerekir) |
 | `scripts/image_manifest.json` | Hangi görselin hangi fotoğraftan üretildiği |
 
-## Yayına almadan önce doğrulanacaklar
+## Bilgilerin kaynağı
 
-Bu bilgiler web'deki rehber kayıtlarından alındı, işletmeden teyit edilmedi:
+- **Telefon:** Tabela ve işletmenin Google kaydı.
+- **Adres, konum ve saatler:** İşletmenin Google kaydı (5 Kasım 2026'da okundu). Saatleri bir rehber sitesi de doğruluyor.
+- **Menü:** İşletmeden alınmış bir liste değildir. Fotoğraflardan ve kayıtlarda geçen ürünlerden seçildi; yemek adlarının çoğu fotoğrafa bakılarak verildi. Bu yüzden sitede "Sofradan seçmeler" olarak sunulur ve fiyat içermez.
+- **Mekân metinleri:** Dış mekân masaları, toplu yemek ve kuryeyle paket servis ifadeleri fotoğraflardan çıkarıldı.
 
-- **Adres ve harita konumu:** Talatpaşa Mah. 1015. Sok. No:68, Esenyurt. Telefonu tabelayla eşleşen kayıttan alındı.
-- **Çalışma saatleri:** 10:30 – 00:00. Kaynaklar birbiriyle çelişiyor.
-- **Menü:** Yemek adları sipariş platformu listesinden ve fotoğraflardan derlendi. Bazı adlar fotoğrafa bakılarak verildi.
-- **Metinler:** Dış mekân masaları, toplu yemek ve kuryeyle paket servis ifadeleri fotoğraflardan çıkarıldı.
-
-Alan adı belli olunca `index.html` içine `canonical`, `og:url` ve `og:image` etiketleri ile yapılandırılmış veriye `url` ve `image` alanları eklenmeli.
+İşletme onayladığında menü `index.html` içindeki `#menu` bölümünden güncellenebilir.
