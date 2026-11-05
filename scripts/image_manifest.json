@@ -56,7 +56,7 @@
   ]
  },
  "kiymali-pide": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.32 (3).jpeg",
+  "source": "WhatsApp Image 2026-11-04 at 14.42.32 (2).jpeg",
   "widths": [
    480,
    1024
@@ -90,34 +90,6 @@
    1024
   ]
  },
- "durum": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.33 (4).jpeg",
-  "widths": [
-   480,
-   1024
-  ]
- },
- "kofte-ekmek": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.34 (1).jpeg",
-  "widths": [
-   480,
-   1024
-  ]
- },
- "tavuk-sis-ekmek": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.34 (3).jpeg",
-  "widths": [
-   480,
-   1024
-  ]
- },
- "adana-ekmek": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.34 (4).jpeg",
-  "widths": [
-   480,
-   1024
-  ]
- },
  "tombik-doner": {
   "source": "WhatsApp Image 2026-11-04 at 14.42.34 (5).jpeg",
   "widths": [
@@ -132,29 +104,8 @@
    1024
   ]
  },
- "yogurtlu-kusbasi": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.35 (2).jpeg",
-  "widths": [
-   480,
-   1024
-  ]
- },
  "tavuk-sis": {
   "source": "WhatsApp Image 2026-11-04 at 14.42.35 (3).jpeg",
-  "widths": [
-   480,
-   1024
-  ]
- },
- "beyti": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.35 (4).jpeg",
-  "widths": [
-   480,
-   1024
-  ]
- },
- "tavuk-izgara": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.35 (5).jpeg",
   "widths": [
    480,
    1024
@@ -181,13 +132,6 @@
    1024
   ]
  },
- "dana-sac-tava": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.36 (3).jpeg",
-  "widths": [
-   480,
-   1024
-  ]
- },
  "cop-sis": {
   "source": "WhatsApp Image 2026-11-04 at 14.42.36 (4).jpeg",
   "widths": [
@@ -197,13 +141,6 @@
  },
  "domatesli-kebap": {
   "source": "WhatsApp Image 2026-11-04 at 14.42.36 (5).jpeg",
-  "widths": [
-   480,
-   1024
-  ]
- },
- "kasarli-iskender": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.36.jpeg",
   "widths": [
    480,
    1024
@@ -246,13 +183,6 @@
  },
  "et-sac-tava": {
   "source": "WhatsApp Image 2026-11-04 at 14.42.37.jpeg",
-  "widths": [
-   480,
-   1024
-  ]
- },
- "firin-kebap": {
-  "source": "WhatsApp Image 2026-11-04 at 14.42.38 (1).jpeg",
   "widths": [
    480,
    1024
@@ -319,5 +249,237 @@
    323,
    310
   ]
+ },
+ "ali-nazik-kebap": {
+  "source": "WhatsApp Image 2026-11-04 at 14.42.35 (4).jpeg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "ali-nazik-sis": {
+  "source": "WhatsApp Image 2026-11-04 at 14.42.35 (2).jpeg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "tavuk-kanat": {
+  "source": "WhatsApp Image 2026-11-04 at 14.42.35 (5).jpeg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "kavurmali-yumurtali-pide": {
+  "source": "WhatsApp Image 2026-11-04 at 14.42.30.jpeg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "katmer": {
+  "source": "WhatsApp Image 2026-11-04 at 14.42.37 (2).jpeg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "yogurt": {
+  "source": "WhatsApp Image 2026-11-04 at 14.42.37 (3).jpeg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "tavuk-sis-durum": {
+  "source": "WhatsApp Image 2026-11-04 at 14.42.33 (5).jpeg",
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "et-sis-durum": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   362,
+   690,
+   568,
+   815
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "adana-durum": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   135,
+   488,
+   345,
+   634
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222,
+  "erase": [
+   0,
+   116,
+   70,
+   146
+  ]
+ },
+ "urfa-durum": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   345,
+   508,
+   585,
+   632
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "kusbasili-pide": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   655,
+   520,
+   892,
+   632
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "kusbasili-kasarli-pide": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   855,
+   510,
+   1082,
+   628
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "kavurmali-kasarli-pide": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   855,
+   703,
+   1097,
+   838
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "coban-salata": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   95,
+   888,
+   334,
+   1048
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "yesil-salata": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (2).jpeg",
+  "crop": [
+   345,
+   1122,
+   562,
+   1272
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
+ },
+ "kilo-kofte": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (4).jpeg",
+  "crop": [
+   640,
+   572,
+   826,
+   788
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "kilo-pirzola": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (4).jpeg",
+  "crop": [
+   848,
+   562,
+   1056,
+   790
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "kilo-kanat": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31 (4).jpeg",
+  "crop": [
+   640,
+   850,
+   832,
+   1028
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ]
+ },
+ "mercimek": {
+  "source": "menü/WhatsApp Image 2026-11-04 at 20.15.31.jpeg",
+  "crop": [
+   862,
+   258,
+   1100,
+   412
+  ],
+  "scale": 3,
+  "widths": [
+   480,
+   1024
+  ],
+  "white": 222
  }
 }

@@ -42,6 +42,12 @@ def main(src_dir):
         im = load(src_dir, spec["source"])
         if "crop" in spec:
             im = im.crop(tuple(spec["crop"]))
+        if "white" in spec:  # basılı kâğıdın grimsi zeminini beyaza çeker
+            im = im.point(lambda v: min(255, round(v * 255 / spec["white"])))
+        if "erase" in spec:  # görsele denk gelen basılı yazıyı siler
+            ImageDraw.Draw(im).rectangle(spec["erase"], fill="white")
+        if "scale" in spec:
+            im = im.resize((im.width * spec["scale"], im.height * spec["scale"]), Image.LANCZOS)
         for width in spec["widths"]:
             target = min(width, im.width)
             resized = im.resize((target, round(im.height * target / im.width)), Image.LANCZOS)

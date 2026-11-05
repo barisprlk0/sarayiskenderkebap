@@ -37,6 +37,7 @@
     $$('button.mi.is-active').forEach((b) => b.classList.remove('is-active'));
     button.classList.add('is-active');
     previewName.textContent = $('.mi__name', button).textContent;
+    previewImg.classList.toggle('is-whole', 'whole' in button.dataset); // broşür görseli kırpılmadan gösterilir
     if (previewImg.getAttribute('src') === src) return;
     previewImg.src = src;
     previewImg.classList.remove('is-swap');

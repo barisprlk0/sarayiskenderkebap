@@ -23,9 +23,11 @@ Ardından tarayıcıda `http://localhost:8765` adresini açın.
 
 ## Bilgilerin kaynağı
 
-- **Telefon:** Tabela ve işletmenin Google kaydı.
-- **Adres, konum ve saatler:** İşletmenin Google kaydı (5 Kasım 2026'da okundu). Saatleri bir rehber sitesi de doğruluyor.
-- **Menü:** İşletmeden alınmış bir liste değildir. Fotoğraflardan ve kayıtlarda geçen ürünlerden seçildi; yemek adlarının çoğu fotoğrafa bakılarak verildi. Bu yüzden sitede "Sofradan seçmeler" olarak sunulur ve fiyat içermez.
+- **Telefonlar:** Tabela, işletmenin Google kaydı ve broşürü. Ek numaralar ve Instagram broşürden; Instagram adresi broşürdeki QR koddan okundu.
+- **Adres ve konum:** İşletmenin Google kaydı (5 Kasım 2026'da okundu).
+- **Saatler:** İşletmenin broşürü (07:00 – 23:00). Broşür gün belirtmiyor; Google kaydı farklı saat gösteriyor (Pzt–Cmt 08:00, Pazar 09:00 açılış).
+- **Menü:** İşletmenin basılı menüsü ve broşürü; bölümler ve sıralama basılı menüyü izler. Fiyatlar bilerek yazılmadı.
+- **Menü görselleri:** Önce işletmenin kendi fotoğrafları, broşürdeki adlı görsellerle karşılaştırılarak kullanıldı. Kendi fotoğrafı olmayan ya da hangi ürün olduğu ayırt edilemeyen ürünlerin görseli broşürden kırpıldı (manifestte kaynağı `menü/`). Hiçbir yerde görseli olmayan ürünler resimsiz listelenir.
 - **Mekân metinleri:** Dış mekân masaları, toplu yemek ve kuryeyle paket servis ifadeleri fotoğraflardan çıkarıldı.
 
-İşletme onayladığında menü `index.html` içindeki `#menu` bölümünden güncellenebilir.
+Menü `index.html` içindeki `#menu` bölümünden güncellenir.

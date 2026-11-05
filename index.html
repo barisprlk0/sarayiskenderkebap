@@ -34,9 +34,9 @@
     },
     "geo": { "@type": "GeoCoordinates", "latitude": 41.0210689, "longitude": 28.6746502 },
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "08:00", "closes": "23:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "23:00" }
-    ]
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "07:00", "closes": "23:00" }
+    ],
+    "sameAs": ["https://www.instagram.com/saray_iskender_/"]
   }
   </script>
 </head>
@@ -121,12 +121,12 @@
           <li class="reveal"><a class="cat" href="#menu" data-tab="pide">
             <span class="arch"><img src="assets/img/sucuklu-yumurtali-pide-480.webp" alt="" loading="lazy" width="480" height="320"></span>
             <strong>Pide</strong><small>Fırından çıtır çıtır</small></a></li>
-          <li class="reveal"><a class="cat" href="#menu" data-tab="lahmacun">
+          <li class="reveal"><a class="cat" href="#menu" data-tab="pide">
             <span class="arch"><img src="assets/img/lahmacun-480.webp" alt="" loading="lazy" width="480" height="320"></span>
             <strong>Lahmacun</strong><small>İnce hamur, bol iç</small></a></li>
           <li class="reveal"><a class="cat" href="#menu" data-tab="tatli">
             <span class="arch"><img src="assets/img/kunefe-480.webp" alt="" loading="lazy" width="480" height="320"></span>
-            <strong>Tatlı</strong><small>Künefe ve sütlaç</small></a></li>
+            <strong>Tatlı</strong><small>Künefe, katmer ve sütlaç</small></a></li>
         </ul>
       </div>
     </section>
@@ -146,8 +146,8 @@
             <figure class="sig__img"><img src="assets/img/iskender-bol-soslu-1024.webp" srcset="assets/img/iskender-bol-soslu-480.webp 480w, assets/img/iskender-bol-soslu-1024.webp 1024w" sizes="(max-width: 700px) 100vw, 55vw" alt="Domates soslu, patatesli ve közlenmiş biberli iskender" loading="lazy" width="1024" height="682"></figure>
             <div class="sig__body">
               <span class="sig__no">I</span>
-              <h3>İskender</h3>
-              <p>Yaprak yaprak et döner, üzerinde bol domates sosu, yanında közlenmiş biber ve patates. İster sade, ister üzeri eritilmiş kaşarlı.</p>
+              <h3>Tereyağlı İskender</h3>
+              <p>Yaprak yaprak et döner, üzerinde domates sosu ve tereyağı, yanında közlenmiş biber ve patates.</p>
             </div>
           </article>
           <article class="sig sig--b reveal">
@@ -167,10 +167,10 @@
             </div>
           </article>
           <article class="sig sig--d reveal">
-            <figure class="sig__img"><img src="assets/img/sucuklu-kasarli-pide-1024.webp" srcset="assets/img/sucuklu-kasarli-pide-480.webp 480w, assets/img/sucuklu-kasarli-pide-1024.webp 1024w" sizes="(max-width: 700px) 100vw, 55vw" alt="Dilimlenmiş sucuklu kaşarlı pide" loading="lazy" width="1024" height="682"></figure>
+            <figure class="sig__img"><img src="assets/img/sucuklu-kasarli-pide-1024.webp" srcset="assets/img/sucuklu-kasarli-pide-480.webp 480w, assets/img/sucuklu-kasarli-pide-1024.webp 1024w" sizes="(max-width: 700px) 100vw, 55vw" alt="Dilimlenmiş kaşarlı sucuklu pide" loading="lazy" width="1024" height="682"></figure>
             <div class="sig__body">
               <span class="sig__no">IV</span>
-              <h3>Sucuklu Kaşarlı Pide</h3>
+              <h3>Kaşarlı Sucuklu Pide</h3>
               <p>Kenarları kıvrılmış ince hamur, eriyen kaşar ve sucuk. Paylaşmak isterseniz dilimli gelir, istemezseniz de kimse sizi suçlamaz.</p>
             </div>
           </article>
@@ -183,121 +183,148 @@
       <div class="container">
         <div class="section-head section-head--center reveal">
           <p class="eyebrow">Menümüz</p>
-          <h2 id="menu-baslik">Sofradan seçmeler</h2>
-          <p class="section-head__text">Tabakların üzerine gelin, büyütmek için tıklayın. Tam menü ve güncel fiyatlar için <a href="tel:+902126205040">0212 620 50 40</a>.</p>
+          <h2 id="menu-baslik">Bütün sofra, tek sayfada</h2>
+          <p class="section-head__text">Tabakların üzerine gelin, büyütmek için tıklayın. Güncel fiyatlar için <a href="tel:+902126205040">0212 620 50 40</a>.</p>
         </div>
 
         <div class="tabs" role="tablist" aria-label="Menü kategorileri">
-          <button class="tab" type="button" role="tab" id="tab-doner" aria-controls="panel-doner" aria-selected="true">Döner &amp; İskender</button>
-          <button class="tab" type="button" role="tab" id="tab-kebap" aria-controls="panel-kebap" aria-selected="false">Izgara &amp; Kebap</button>
+          <button class="tab" type="button" role="tab" id="tab-doner" aria-controls="panel-doner" aria-selected="true">Döner</button>
+          <button class="tab" type="button" role="tab" id="tab-kebap" aria-controls="panel-kebap" aria-selected="false">Kebap</button>
           <button class="tab" type="button" role="tab" id="tab-tava" aria-controls="panel-tava" aria-selected="false">Sac Tava</button>
           <button class="tab" type="button" role="tab" id="tab-pide" aria-controls="panel-pide" aria-selected="false">Pide</button>
-          <button class="tab" type="button" role="tab" id="tab-lahmacun" aria-controls="panel-lahmacun" aria-selected="false">Lahmacun</button>
-          <button class="tab" type="button" role="tab" id="tab-durum" aria-controls="panel-durum" aria-selected="false">Dürüm &amp; Ekmek Arası</button>
-          <button class="tab" type="button" role="tab" id="tab-yan" aria-controls="panel-yan" aria-selected="false">Çorba &amp; Yan</button>
+          <button class="tab" type="button" role="tab" id="tab-durum" aria-controls="panel-durum" aria-selected="false">Dürüm</button>
+          <button class="tab" type="button" role="tab" id="tab-corba" aria-controls="panel-corba" aria-selected="false">Çorba</button>
+          <button class="tab" type="button" role="tab" id="tab-salata" aria-controls="panel-salata" aria-selected="false">Salata</button>
           <button class="tab" type="button" role="tab" id="tab-tatli" aria-controls="panel-tatli" aria-selected="false">Tatlı</button>
-          <button class="tab" type="button" role="tab" id="tab-icecek" aria-controls="panel-icecek" aria-selected="false">İçecek</button>
+          <button class="tab" type="button" role="tab" id="tab-mesrubat" aria-controls="panel-mesrubat" aria-selected="false">Meşrubat</button>
         </div>
 
         <div class="menu-board">
           <aside class="menu-preview" aria-hidden="true">
             <div class="arch arch--ring">
-              <img id="menu-preview-img" src="assets/img/iskender-1024.webp" alt="" width="1024" height="682">
+              <img id="menu-preview-img" src="assets/img/porsiyon-doner-1024.webp" alt="" width="1024" height="682">
             </div>
-            <p class="menu-preview__name" id="menu-preview-name">İskender</p>
+            <p class="menu-preview__name" id="menu-preview-name">Porsiyon Et Döner</p>
           </aside>
 
           <div class="menu-panels">
             <div class="panel" role="tabpanel" id="panel-doner" aria-labelledby="tab-doner" tabindex="0">
-              <h3 class="panel__title">Döner &amp; İskender</h3>
+              <h3 class="panel__title">Döner Çeşitleri</h3>
               <ul class="menu-list">
-                <li><button class="mi" type="button" data-img="iskender"><img src="assets/img/iskender-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">İskender</span><span class="mi__note">Et dönerden, domates soslu, patates ve közlenmiş biberle</span></button></li>
-                <li><button class="mi" type="button" data-img="kasarli-iskender"><img src="assets/img/kasarli-iskender-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kaşarlı İskender</span><span class="mi__note">Et dönerden, üzeri eritilmiş kaşarla</span></button></li>
-                <li><button class="mi" type="button" data-img="porsiyon-doner"><img src="assets/img/porsiyon-doner-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Porsiyon Et Döner</span><span class="mi__note">Patates ve közlenmiş biberle</span></button></li>
-                <li><button class="mi" type="button" data-img="pilav-ustu-doner"><img src="assets/img/pilav-ustu-doner-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Pilav Üstü Et Döner</span><span class="mi__note">Pirinç pilavı üzerinde</span></button></li>
-                <li><button class="mi" type="button" data-img="yarim-ekmek-doner"><img src="assets/img/yarim-ekmek-doner-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Yarım Ekmek Et Döner</span></button></li>
-                <li><button class="mi" type="button" data-img="tombik-doner"><img src="assets/img/tombik-doner-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Tombik Ekmek Et Döner</span></button></li>
+                <li><button class="mi" type="button" data-img="porsiyon-doner"><img src="assets/img/porsiyon-doner-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Porsiyon Et Döner</span></button></li>
+                <li><button class="mi" type="button" data-img="pilav-ustu-doner"><img src="assets/img/pilav-ustu-doner-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Pilav Üstü Döner</span></button></li>
+                <li><button class="mi" type="button" data-img="iskender"><img src="assets/img/iskender-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Tereyağlı İskender</span></button></li>
                 <li><button class="mi" type="button" data-img="et-doner-durum"><img src="assets/img/et-doner-durum-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Et Döner Dürüm</span></button></li>
+                <li><div class="mi"><span class="mi__name">Tam Ekmek Döner</span></div></li>
+                <li><div class="mi"><span class="mi__name">Üç Çeyrek Döner</span></div></li>
+                <li><button class="mi" type="button" data-img="yarim-ekmek-doner"><img src="assets/img/yarim-ekmek-doner-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Yarım Ekmek Et Döner</span></button></li>
+                <li><div class="mi"><span class="mi__name">Sandwich Döner</span></div></li>
+                <li><button class="mi" type="button" data-img="tombik-doner"><img src="assets/img/tombik-doner-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Tombik Et Döner</span></button></li>
               </ul>
             </div>
 
             <div class="panel" role="tabpanel" id="panel-kebap" aria-labelledby="tab-kebap" tabindex="0">
-              <h3 class="panel__title">Izgara &amp; Kebap</h3>
+              <h3 class="panel__title">Kebap Çeşitleri</h3>
               <ul class="menu-list">
-                <li><button class="mi" type="button" data-img="saray-karisik"><img src="assets/img/saray-karisik-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Karışık Kebap</span><span class="mi__note">Lahmacun üzerinde karışık ızgara</span></button></li>
-                <li><button class="mi" type="button" data-img="adana"><img src="assets/img/adana-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Adana Kebap</span><span class="mi__note">Bulgur pilavı, közlenmiş biber ve domatesle</span></button></li>
-                <li><button class="mi" type="button" data-img="domatesli-kebap"><img src="assets/img/domatesli-kebap-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Domatesli Kebap</span><span class="mi__note">Közlenmiş domates eşliğinde</span></button></li>
-                <li><button class="mi" type="button" data-img="patlicanli-kebap"><img src="assets/img/patlicanli-kebap-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Patlıcanlı Kebap</span><span class="mi__note">Közlenmiş patlıcan dilimleriyle</span></button></li>
-                <li><button class="mi" type="button" data-img="beyti"><img src="assets/img/beyti-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Beyti Kebap</span><span class="mi__note">Yoğurt ve domates sosuyla</span></button></li>
-                <li><button class="mi" type="button" data-img="sarma-beyti"><img src="assets/img/sarma-beyti-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Sarma Beyti Kebap</span><span class="mi__note">Lavaşa sarılı, bulgur pilavıyla</span></button></li>
-                <li><button class="mi" type="button" data-img="cop-sis"><img src="assets/img/cop-sis-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Çöp Şiş</span><span class="mi__note">Bulgur pilavı ve lavaşla</span></button></li>
-                <li><button class="mi" type="button" data-img="izgara-kofte"><img src="assets/img/izgara-kofte-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Izgara Köfte</span><span class="mi__note">Pirinç pilavı ve patatesle</span></button></li>
-                <li><button class="mi" type="button" data-img="kuzu-sis"><img src="assets/img/kuzu-sis-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kuzu Şiş</span><span class="mi__note">Bulgur pilavı ve közlenmiş biberle</span></button></li>
-                <li><button class="mi" type="button" data-img="yogurtlu-kusbasi"><img src="assets/img/yogurtlu-kusbasi-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Yoğurtlu Kuşbaşı</span><span class="mi__note">Pide üzerinde, domates sosuyla</span></button></li>
-                <li><button class="mi" type="button" data-img="tavuk-sis"><img src="assets/img/tavuk-sis-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Tavuk Şiş</span><span class="mi__note">Bulgur pilavı ve közlenmiş biberle</span></button></li>
+                <li><button class="mi" type="button" data-img="izgara-kofte"><img src="assets/img/izgara-kofte-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Izgara Köfte</span></button></li>
+                <li><button class="mi" type="button" data-img="adana"><img src="assets/img/adana-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Adana Kebap</span></button></li>
+                <li><div class="mi"><span class="mi__name">Urfa Kebap</span></div></li>
+                <li><button class="mi" type="button" data-img="tavuk-sis"><img src="assets/img/tavuk-sis-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Tavuk Şiş</span></button></li>
+                <li><div class="mi"><span class="mi__name">Tavuk Pirzola</span></div></li>
+                <li><button class="mi" type="button" data-img="tavuk-kanat"><img src="assets/img/tavuk-kanat-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Tavuk Kanat</span></button></li>
+                <li><button class="mi" type="button" data-img="kuzu-sis"><img src="assets/img/kuzu-sis-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kuzu Şiş</span></button></li>
+                <li><button class="mi" type="button" data-img="cop-sis"><img src="assets/img/cop-sis-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Çöp Şiş</span></button></li>
+                <li><div class="mi"><span class="mi__name">Beyti</span></div></li>
+                <li><button class="mi" type="button" data-img="sarma-beyti"><img src="assets/img/sarma-beyti-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Sarma Beyti</span></button></li>
+                <li><button class="mi" type="button" data-img="domatesli-kebap"><img src="assets/img/domatesli-kebap-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Domatesli Kebap</span></button></li>
+                <li><button class="mi" type="button" data-img="patlicanli-kebap"><img src="assets/img/patlicanli-kebap-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Patlıcanlı Kebap</span></button></li>
+                <li><button class="mi" type="button" data-img="ali-nazik-sis"><img src="assets/img/ali-nazik-sis-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Ali Nazik (Şişten)</span></button></li>
+                <li><button class="mi" type="button" data-img="ali-nazik-kebap"><img src="assets/img/ali-nazik-kebap-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Ali Nazik (Kebaptan)</span></button></li>
+                <li><div class="mi"><span class="mi__name">Ali Nazik (Dönerden)</span></div></li>
+                <li><button class="mi" type="button" data-img="saray-karisik"><img src="assets/img/saray-karisik-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Karışık Kebap</span></button></li>
+                <li><button class="mi" type="button" data-img="kilo-kofte" data-whole><img src="assets/img/kilo-kofte-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kilo Köfte</span></button></li>
+                <li><button class="mi" type="button" data-img="kilo-kanat" data-whole><img src="assets/img/kilo-kanat-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kilo Kanat</span></button></li>
+                <li><button class="mi" type="button" data-img="kilo-pirzola" data-whole><img src="assets/img/kilo-pirzola-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kilo Kemiksiz Tavuk Pirzola</span></button></li>
               </ul>
             </div>
 
             <div class="panel" role="tabpanel" id="panel-tava" aria-labelledby="tab-tava" tabindex="0">
-              <h3 class="panel__title">Sac Tava</h3>
+              <h3 class="panel__title">Sac Tava Çeşitleri</h3>
               <ul class="menu-list">
-                <li><button class="mi" type="button" data-img="et-sac-tava"><img src="assets/img/et-sac-tava-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Et Sac Tava</span><span class="mi__note">Sacında, lavaşla birlikte</span></button></li>
-                <li><button class="mi" type="button" data-img="dana-sac-tava"><img src="assets/img/dana-sac-tava-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Dana Sac Tava</span><span class="mi__note">Biber ve domatesle kavrulmuş</span></button></li>
+                <li><button class="mi" type="button" data-img="et-sac-tava"><img src="assets/img/et-sac-tava-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Sac Tava</span></button></li>
+                <li><div class="mi"><span class="mi__name">Kaşarlı Sac Tava</span></div></li>
+                <li><div class="mi"><span class="mi__name">Tavuk Sac Tava</span></div></li>
               </ul>
             </div>
 
             <div class="panel" role="tabpanel" id="panel-pide" aria-labelledby="tab-pide" tabindex="0">
-              <h3 class="panel__title">Pide</h3>
-              <ul class="menu-list">
-                <li><button class="mi" type="button" data-img="karisik-pide"><img src="assets/img/karisik-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Karışık Pide</span></button></li>
-                <li><button class="mi" type="button" data-img="kasarli-pide"><img src="assets/img/kasarli-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kaşarlı Pide</span></button></li>
-                <li><button class="mi" type="button" data-img="kiymali-pide"><img src="assets/img/kiymali-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kıymalı Pide</span></button></li>
-                <li><button class="mi" type="button" data-img="kiymali-kasarli-pide"><img src="assets/img/kiymali-kasarli-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kıymalı Kaşarlı Pide</span></button></li>
-                <li><button class="mi" type="button" data-img="sucuklu-kasarli-pide"><img src="assets/img/sucuklu-kasarli-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Sucuklu Kaşarlı Pide</span></button></li>
-                <li><button class="mi" type="button" data-img="sucuklu-yumurtali-pide"><img src="assets/img/sucuklu-yumurtali-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Sucuklu Yumurtalı Pide</span></button></li>
-              </ul>
-            </div>
-
-            <div class="panel" role="tabpanel" id="panel-lahmacun" aria-labelledby="tab-lahmacun" tabindex="0">
-              <h3 class="panel__title">Lahmacun</h3>
+              <h3 class="panel__title">Pide Çeşitleri</h3>
               <ul class="menu-list">
                 <li><button class="mi" type="button" data-img="lahmacun"><img src="assets/img/lahmacun-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Lahmacun</span></button></li>
+                <li><div class="mi"><span class="mi__name">Özel Lahmacun</span></div></li>
+                <li><button class="mi" type="button" data-img="kusbasili-pide" data-whole><img src="assets/img/kusbasili-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kuşbaşılı Pide</span></button></li>
+                <li><button class="mi" type="button" data-img="kusbasili-kasarli-pide" data-whole><img src="assets/img/kusbasili-kasarli-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kuşbaşılı Kaşarlı Pide</span></button></li>
+                <li><button class="mi" type="button" data-img="karisik-pide"><img src="assets/img/karisik-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Karışık Pide</span></button></li>
+                <li><button class="mi" type="button" data-img="kavurmali-kasarli-pide" data-whole><img src="assets/img/kavurmali-kasarli-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kavurmalı Kaşarlı Pide</span></button></li>
+                <li><button class="mi" type="button" data-img="kavurmali-yumurtali-pide"><img src="assets/img/kavurmali-yumurtali-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kavurmalı Yumurtalı Pide</span></button></li>
+                <li><button class="mi" type="button" data-img="sucuklu-yumurtali-pide"><img src="assets/img/sucuklu-yumurtali-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Sucuklu Yumurtalı Pide</span></button></li>
+                <li><button class="mi" type="button" data-img="sucuklu-kasarli-pide"><img src="assets/img/sucuklu-kasarli-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kaşarlı Sucuklu Pide</span></button></li>
+                <li><button class="mi" type="button" data-img="kiymali-kasarli-pide"><img src="assets/img/kiymali-kasarli-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kıymalı Kaşarlı Pide</span></button></li>
+                <li><button class="mi" type="button" data-img="kiymali-pide"><img src="assets/img/kiymali-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kıymalı Pide</span></button></li>
+                <li><button class="mi" type="button" data-img="kasarli-pide"><img src="assets/img/kasarli-pide-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Kaşarlı Pide</span></button></li>
               </ul>
             </div>
 
             <div class="panel" role="tabpanel" id="panel-durum" aria-labelledby="tab-durum" tabindex="0">
-              <h3 class="panel__title">Dürüm &amp; Ekmek Arası</h3>
+              <h3 class="panel__title">Dürüm Çeşitleri</h3>
               <ul class="menu-list">
-                <li><button class="mi" type="button" data-img="durum"><img src="assets/img/durum-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Dürüm</span></button></li>
-                <li><button class="mi" type="button" data-img="adana-ekmek"><img src="assets/img/adana-ekmek-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Adana Ekmek Arası</span></button></li>
-                <li><button class="mi" type="button" data-img="kofte-ekmek"><img src="assets/img/kofte-ekmek-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Köfte Ekmek Arası</span></button></li>
-                <li><button class="mi" type="button" data-img="tavuk-sis-ekmek"><img src="assets/img/tavuk-sis-ekmek-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Tavuk Şiş Ekmek Arası</span></button></li>
+                <li><button class="mi" type="button" data-img="adana-durum" data-whole><img src="assets/img/adana-durum-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Adana Dürüm</span></button></li>
+                <li><button class="mi" type="button" data-img="urfa-durum" data-whole><img src="assets/img/urfa-durum-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Urfa Dürüm</span></button></li>
+                <li><button class="mi" type="button" data-img="tavuk-sis-durum"><img src="assets/img/tavuk-sis-durum-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Tavuk Şiş Dürüm</span></button></li>
+                <li><button class="mi" type="button" data-img="et-doner-durum"><img src="assets/img/et-doner-durum-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Et Döner Dürüm</span></button></li>
+                <li><div class="mi"><span class="mi__name">Kaşarlı Döner Dürüm</span></div></li>
+                <li><button class="mi" type="button" data-img="et-sis-durum" data-whole><img src="assets/img/et-sis-durum-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Et Şiş Dürüm</span></button></li>
               </ul>
             </div>
 
-            <div class="panel" role="tabpanel" id="panel-yan" aria-labelledby="tab-yan" tabindex="0">
-              <h3 class="panel__title">Çorba &amp; Yan Lezzetler</h3>
+            <div class="panel" role="tabpanel" id="panel-corba" aria-labelledby="tab-corba" tabindex="0">
+              <h3 class="panel__title">Çorba Çeşitleri</h3>
               <ul class="menu-list">
-                <li><div class="mi"><span class="mi__name">Mercimek Çorbası</span></div></li>
+                <li><button class="mi" type="button" data-img="mercimek" data-whole><img src="assets/img/mercimek-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Mercimek</span></button></li>
+                <li><div class="mi"><span class="mi__name">Tavuk Suyu</span></div></li>
+              </ul>
+            </div>
+
+            <div class="panel" role="tabpanel" id="panel-salata" aria-labelledby="tab-salata" tabindex="0">
+              <h3 class="panel__title">Salata Çeşitleri</h3>
+              <ul class="menu-list">
+                <li><button class="mi" type="button" data-img="coban-salata" data-whole><img src="assets/img/coban-salata-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Çoban Salata</span></button></li>
                 <li><button class="mi" type="button" data-img="salata"><img src="assets/img/salata-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Mevsim Salata</span></button></li>
+                <li><div class="mi"><span class="mi__name">Göbek Salata</span></div></li>
+                <li><div class="mi"><span class="mi__name">Ezme Salata</span></div></li>
+                <li><button class="mi" type="button" data-img="yogurt"><img src="assets/img/yogurt-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Yoğurt</span></button></li>
                 <li><button class="mi" type="button" data-img="cacik"><img src="assets/img/cacik-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Cacık</span></button></li>
+                <li><button class="mi" type="button" data-img="yesil-salata" data-whole><img src="assets/img/yesil-salata-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Yeşil Salata</span></button></li>
               </ul>
             </div>
 
             <div class="panel" role="tabpanel" id="panel-tatli" aria-labelledby="tab-tatli" tabindex="0">
-              <h3 class="panel__title">Tatlı</h3>
+              <h3 class="panel__title">Tatlı Çeşitleri</h3>
               <ul class="menu-list">
-                <li><button class="mi" type="button" data-img="kunefe"><img src="assets/img/kunefe-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Künefe</span><span class="mi__note">Üzeri fıstıklı</span></button></li>
-                <li><button class="mi" type="button" data-img="sutlac"><img src="assets/img/sutlac-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Sütlaç</span><span class="mi__note">Fırında, toprak kapta</span></button></li>
+                <li><button class="mi" type="button" data-img="kunefe"><img src="assets/img/kunefe-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Künefe</span></button></li>
+                <li><button class="mi" type="button" data-img="sutlac"><img src="assets/img/sutlac-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Fırın Sütlaç</span></button></li>
+                <li><button class="mi" type="button" data-img="katmer"><img src="assets/img/katmer-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Katmer</span></button></li>
               </ul>
             </div>
 
-            <div class="panel" role="tabpanel" id="panel-icecek" aria-labelledby="tab-icecek" tabindex="0">
-              <h3 class="panel__title">İçecek</h3>
+            <div class="panel" role="tabpanel" id="panel-mesrubat" aria-labelledby="tab-mesrubat" tabindex="0">
+              <h3 class="panel__title">Meşrubat Çeşitleri</h3>
               <ul class="menu-list">
+                <li><div class="mi"><span class="mi__name">Coca Cola</span></div></li>
+                <li><div class="mi"><span class="mi__name">Fanta</span></div></li>
+                <li><div class="mi"><span class="mi__name">Cappy Meyve Suyu</span></div></li>
+                <li><div class="mi"><span class="mi__name">Şalgam Suyu</span></div></li>
                 <li><button class="mi" type="button" data-img="ayran"><img src="assets/img/ayran-480.webp" alt="" loading="lazy" width="56" height="56"><span class="mi__name">Ayran</span></button></li>
-                <li><div class="mi"><span class="mi__name">Meşrubat</span></div></li>
-                <li><div class="mi"><span class="mi__name">Su</span></div></li>
               </ul>
             </div>
           </div>
@@ -313,15 +340,15 @@
           <h2 id="galeri-baslik">Önce gözünüz doysun</h2>
         </div>
         <div class="gallery reveal">
-          <button class="gallery__item g-wide" type="button" data-img="yogurtlu-kusbasi" data-title="Yoğurtlu kuşbaşı"><img src="assets/img/yogurtlu-kusbasi-1024.webp" alt="Yoğurtlu kuşbaşı kebap" loading="lazy" width="1024" height="682"></button>
-          <button class="gallery__item" type="button" data-img="kuzu-sis" data-title="Kuzu şiş"><img src="assets/img/kuzu-sis-480.webp" alt="Bulgur pilavı ile kuzu şiş" loading="lazy" width="480" height="320"></button>
+          <button class="gallery__item g-wide" type="button" data-img="ali-nazik-sis" data-title="Ali Nazik (Şişten)"><img src="assets/img/ali-nazik-sis-1024.webp" alt="Yoğurt ve pide üzerinde şişten Ali Nazik" loading="lazy" width="1024" height="682"></button>
+          <button class="gallery__item" type="button" data-img="kuzu-sis" data-title="Kuzu Şiş"><img src="assets/img/kuzu-sis-480.webp" alt="Bulgur pilavı ile kuzu şiş" loading="lazy" width="480" height="320"></button>
           <button class="gallery__item" type="button" data-img="kunefe" data-title="Künefe"><img src="assets/img/kunefe-480.webp" alt="Fıstıklı künefe" loading="lazy" width="480" height="320"></button>
-          <button class="gallery__item" type="button" data-img="karisik-pide" data-title="Karışık pide"><img src="assets/img/karisik-pide-480.webp" alt="Dilimlenmiş karışık pide" loading="lazy" width="480" height="320"></button>
-          <button class="gallery__item" type="button" data-img="salata" data-title="Mevsim salata"><img src="assets/img/salata-480.webp" alt="Renkli mevsim salatası" loading="lazy" width="480" height="320"></button>
-          <button class="gallery__item g-wide" type="button" data-img="domatesli-kebap" data-title="Domatesli kebap"><img src="assets/img/domatesli-kebap-1024.webp" alt="Közlenmiş domatesli kebap" loading="lazy" width="1024" height="682"></button>
-          <button class="gallery__item" type="button" data-img="firin-kebap" data-title="Fırında kebap"><img src="assets/img/firin-kebap-480.webp" alt="Fırında kıymalı kebap" loading="lazy" width="480" height="320"></button>
-          <button class="gallery__item" type="button" data-img="sutlac" data-title="Sütlaç"><img src="assets/img/sutlac-480.webp" alt="Toprak kapta fırın sütlaç" loading="lazy" width="480" height="320"></button>
-          <button class="gallery__item" type="button" data-img="tavuk-izgara" data-title="Tavuk ızgara"><img src="assets/img/tavuk-izgara-480.webp" alt="Bulgur pilavıyla tavuk ızgara" loading="lazy" width="480" height="320"></button>
+          <button class="gallery__item" type="button" data-img="karisik-pide" data-title="Karışık Pide"><img src="assets/img/karisik-pide-480.webp" alt="Dilimlenmiş karışık pide" loading="lazy" width="480" height="320"></button>
+          <button class="gallery__item" type="button" data-img="salata" data-title="Mevsim Salata"><img src="assets/img/salata-480.webp" alt="Renkli mevsim salatası" loading="lazy" width="480" height="320"></button>
+          <button class="gallery__item g-wide" type="button" data-img="domatesli-kebap" data-title="Domatesli Kebap"><img src="assets/img/domatesli-kebap-1024.webp" alt="Közlenmiş domatesli kebap" loading="lazy" width="1024" height="682"></button>
+          <button class="gallery__item" type="button" data-img="et-sac-tava" data-title="Sac Tava"><img src="assets/img/et-sac-tava-480.webp" alt="Sacında lavaşla servis edilen sac tava" loading="lazy" width="480" height="320"></button>
+          <button class="gallery__item" type="button" data-img="sutlac" data-title="Fırın Sütlaç"><img src="assets/img/sutlac-480.webp" alt="Toprak kapta fırın sütlaç" loading="lazy" width="480" height="320"></button>
+          <button class="gallery__item" type="button" data-img="tavuk-kanat" data-title="Tavuk Kanat"><img src="assets/img/tavuk-kanat-480.webp" alt="Bulgur pilavıyla tavuk kanat" loading="lazy" width="480" height="320"></button>
           <button class="gallery__item" type="button" data-img="ayran" data-title="Ayran"><img src="assets/img/ayran-480.webp" alt="Bardakta köpüklü ayran" loading="lazy" width="480" height="320"></button>
         </div>
       </div>
@@ -369,8 +396,9 @@
           <h2 id="iletisim-baslik">Sofranız hazır</h2>
           <dl class="contact__list">
             <div><dt>Adres</dt><dd>Talatpaşa Mah., Fatih Sultan Mehmet Cad. No:91/F<br>34513 Esenyurt / İstanbul</dd></div>
-            <div><dt>Telefon</dt><dd><a href="tel:+902126205040">0212 620 50 40</a></dd></div>
-            <div><dt>Çalışma saatleri</dt><dd>Pazartesi – Cumartesi: 08:00 – 23:00<br>Pazar: 09:00 – 23:00</dd></div>
+            <div><dt>Telefon</dt><dd><a href="tel:+902126205040">0212 620 50 40</a><br><a href="tel:+902125965522">0212 596 55 22</a><br><a href="tel:+905306676441">0530 667 64 41</a></dd></div>
+            <div><dt>Çalışma saatleri</dt><dd>Her gün: 07:00 – 23:00</dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/saray_iskender_/" target="_blank" rel="noopener">@saray_iskender_</a></dd></div>
           </dl>
           <div class="contact__actions">
             <a class="btn btn--red btn--lg" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.0210689,28.6746502" target="_blank" rel="noopener">
