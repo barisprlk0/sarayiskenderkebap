@@ -41,7 +41,6 @@
     const apply = () => {
       if (wanted !== button) return; // bu arada başka ürüne geçildi
       previewName.textContent = $('.mi__name', button).textContent;
-      previewImg.classList.toggle('is-whole', 'whole' in button.dataset); // basılı görsel kırpılmadan gösterilir
       if (previewImg.getAttribute('src') === src) return;
       previewImg.src = src;
       previewImg.classList.remove('is-swap');
@@ -82,7 +81,7 @@
     t.tabIndex = i === 0 ? 0 : -1;
     document.getElementById(t.getAttribute('aria-controls')).hidden = i !== 0;
   });
-  preview($('#panel-doner button.mi'));
+  preview($(`#${tabs[0].getAttribute('aria-controls')} button.mi`));
 
   $$('.mi[data-img]').forEach((button) => {
     ['pointerenter', 'focus'].forEach((type) => button.addEventListener(type, () => preview(button)));
