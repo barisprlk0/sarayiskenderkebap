@@ -31,18 +31,27 @@
   const previewImg = $('#menu-preview-img');
   const previewName = $('#menu-preview-name');
 
+  let wanted = null;
   const preview = (button) => {
     if (!button) return;
     const src = bigImage(button.dataset.img);
     $$('button.mi.is-active').forEach((b) => b.classList.remove('is-active'));
     button.classList.add('is-active');
-    previewName.textContent = $('.mi__name', button).textContent;
-    previewImg.classList.toggle('is-whole', 'whole' in button.dataset); // broşür görseli kırpılmadan gösterilir
-    if (previewImg.getAttribute('src') === src) return;
-    previewImg.src = src;
-    previewImg.classList.remove('is-swap');
-    void previewImg.offsetWidth; // animasyonu yeniden başlatır
-    previewImg.classList.add('is-swap');
+    wanted = button;
+    const apply = () => {
+      if (wanted !== button) return; // bu arada başka ürüne geçildi
+      previewName.textContent = $('.mi__name', button).textContent;
+      previewImg.classList.toggle('is-whole', 'whole' in button.dataset); // basılı görsel kırpılmadan gösterilir
+      if (previewImg.getAttribute('src') === src) return;
+      previewImg.src = src;
+      previewImg.classList.remove('is-swap');
+      void previewImg.offsetWidth; // animasyonu yeniden başlatır
+      previewImg.classList.add('is-swap');
+    };
+    // Ad ve görsel birlikte değişsin: önce yeni görsel yüklenir.
+    const next = new Image();
+    next.onload = next.onerror = apply;
+    next.src = src;
   };
 
   const selectTab = (tab, { focus = false } = {}) => {

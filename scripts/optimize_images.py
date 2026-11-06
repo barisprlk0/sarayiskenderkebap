@@ -39,7 +39,10 @@ def main(src_dir):
         if slug == "_logo":
             make_logo(src_dir, spec)
             continue
-        im = load(src_dir, spec["source"])
+        if "web" in spec:  # internetten alınan, lisansı README'de yazan görseller
+            im = load(ROOT / "scripts" / "web_images", spec["web"])
+        else:
+            im = load(src_dir, spec["source"])
         if "crop" in spec:
             im = im.crop(tuple(spec["crop"]))
         if "white" in spec:  # basılı kâğıdın grimsi zeminini beyaza çeker
