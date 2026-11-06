@@ -29,6 +29,7 @@ Ardından tarayıcıda `http://localhost:8765` adresini açın.
 - **Saatler:** İşletmenin Google kaydı, işletme tarafından onaylandı (Pzt–Cmt 08:00 – 23:00, Pazar 09:00 – 23:00). Broşürdeki 07:00 açılış kullanılmadı.
 - **Menü:** İşletmenin basılı (fiyatlı) menüsü; bölümler, sıralama ve ürün adları onu birebir izler. Tombik Et Döner, Yeşil Salata ve kilo ürünleri yalnızca broşürde geçtiği için bölümlerinin sonuna eklendi. Fiyatlar bilerek yazılmadı.
 - **Menü görselleri:** Önce işletmenin kendi fotoğrafları kullanıldı. Basılı menüdeki ya da broşürdeki görseller kullanılmaz. Kendi fotoğrafı olmayan ürünlerin görseli internetten alındı. Aynı görünen ürünler (Adana/Urfa Dürüm, Üç Çeyrek/Yarım Döner, kilo ürünleri ile porsiyonları) aynı fotoğrafı paylaşır.
+- **Tavuk Sac Tava görseli:** Site sahibi tarafından verildi (`scripts/web_images/tavuk-sac-tava.jpg`), kaynak listesinde yer almaz.
 - **İnternetten alınan görseller:** Yalnızca serbest lisanslı görseller kullanıldı; `scripts/web_images/` içinde durur. Eser sahibi ve lisans bilgileri sitenin altındaki "Görsel kaynakları" bölümündedir, bu görseller değiştirilirse bölüm de güncellenmelidir.
 - **Mekân metinleri:** Dış mekân masaları, toplu yemek ve kuryeyle paket servis ifadeleri fotoğraflardan çıkarıldı.
 
