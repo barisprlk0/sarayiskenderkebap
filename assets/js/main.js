@@ -97,6 +97,7 @@
   const boxImg = $('#lightbox-img');
   const boxCap = $('#lightbox-cap');
   const boxSection = $('#lightbox-section');
+  const boxProgress = $('#lightbox-progress');
   const prev = $('.lightbox__nav--prev');
   const next = $('.lightbox__nav--next');
   const tapToBrowse = window.matchMedia('(max-width: 900px), (pointer: coarse)');
@@ -111,6 +112,15 @@
     boxCap.textContent = title;
     boxSection.hidden = !section;
     boxSection.textContent = section || '';
+    // Hikâye çubuğu: bölümdeki her ürün bir parça, buraya kadarkiler dolu.
+    const group = items.filter((item) => item.section === section);
+    const at = group.indexOf(items[index]);
+    boxProgress.hidden = group.length < 2;
+    boxProgress.replaceChildren(...group.map((_, k) => {
+      const bar = document.createElement('span');
+      if (k <= at) bar.className = 'is-done';
+      return bar;
+    }));
     new Image().src = bigImage(items[(index + 1) % items.length].slug); // sıradakini önceden yükler
   };
   const open = (list, i) => {
