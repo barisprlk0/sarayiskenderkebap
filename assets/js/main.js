@@ -96,17 +96,22 @@
   const box = $('#lightbox');
   const boxImg = $('#lightbox-img');
   const boxCap = $('#lightbox-cap');
+  const boxSection = $('#lightbox-section');
   const prev = $('.lightbox__nav--prev');
   const next = $('.lightbox__nav--next');
+  const tapToBrowse = window.matchMedia('(max-width: 900px), (pointer: coarse)');
   let items = [];
   let index = 0;
 
   const show = (i) => {
     index = (i + items.length) % items.length;
-    const { slug, title, alt } = items[index];
+    const { slug, title, alt, section } = items[index];
     boxImg.src = bigImage(slug);
     boxImg.alt = alt || title;
     boxCap.textContent = title;
+    boxSection.hidden = !section;
+    boxSection.textContent = section || '';
+    new Image().src = bigImage(items[(index + 1) % items.length].slug); // sıradakini önceden yükler
   };
   const open = (list, i) => {
     items = list;
@@ -120,19 +125,34 @@
   }));
   $$('.gallery__item').forEach((b, i) => b.addEventListener('click', () => open(galleryItems, i)));
 
-  // Menüdeki fotoğraflı tabaklar, açık sekme içinde gezilebilir.
-  $$('button.mi').forEach((button) => {
-    button.addEventListener('click', () => {
-      const siblings = $$('button.mi', button.closest('.panel'));
-      const list = siblings.map((b) => ({ slug: b.dataset.img, title: $('.mi__name', b).textContent }));
-      open(list, siblings.indexOf(button));
-    });
+  // Menüdeki tabaklar tek sırada gezilir: bir bölüm bitince sonrakine geçilir.
+  const menuButtons = $$('button.mi');
+  const menuItems = menuButtons.map((b) => {
+    const panel = b.closest('.panel');
+    return { slug: b.dataset.img, title: $('.mi__name', b).textContent, section: $('.panel__title', panel).textContent, button: b, panel };
+  });
+  menuButtons.forEach((button, i) => button.addEventListener('click', () => open(menuItems, i)));
+
+  // Kapanınca menü, en son bakılan ürünün bölümünde açık kalır.
+  box.addEventListener('close', () => {
+    const { button, panel } = items[index] || {};
+    if (!button) return;
+    if (panel.hidden) selectTab(document.getElementById(panel.getAttribute('aria-labelledby')));
+    preview(button);
   });
 
   $('.lightbox__close').addEventListener('click', () => box.close());
   prev.addEventListener('click', () => show(index - 1));
   next.addEventListener('click', () => show(index + 1));
-  box.addEventListener('click', (e) => { if (e.target === box) box.close(); });
+  box.addEventListener('click', (e) => {
+    if (e.target.closest('button')) return;
+    // Dokunmatik ekranda sağ yarı ileri, sol yarı geri götürür.
+    if (tapToBrowse.matches && items.length > 1) {
+      show(index + (e.clientX > window.innerWidth / 2 ? 1 : -1));
+      return;
+    }
+    if (e.target === box) box.close();
+  });
   box.addEventListener('keydown', (e) => {
     if (items.length < 2) return;
     if (e.key === 'ArrowLeft') show(index - 1);
