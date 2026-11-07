@@ -61,7 +61,6 @@
       document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
     });
     if (focus) tab.focus();
-    tab.scrollIntoView({ block: 'nearest', inline: 'center' });
     preview($(`#${tab.getAttribute('aria-controls')} button.mi`));
   };
 
