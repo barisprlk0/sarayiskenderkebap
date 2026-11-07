@@ -65,7 +65,13 @@
   };
 
   tabs.forEach((tab, i) => {
-    tab.addEventListener('click', () => selectTab(tab));
+    tab.addEventListener('click', () => {
+      selectTab(tab);
+      // Telefonda kutucuk, bölümün ilk ürünüyle doğrudan büyük görseli açar.
+      if (!tapToBrowse.matches) return;
+      const first = menuItems.findIndex((item) => item.panel.id === tab.getAttribute('aria-controls'));
+      if (first !== -1) open(menuItems, first);
+    });
     tab.addEventListener('keydown', (e) => {
       const last = tabs.length - 1;
       const next = { ArrowRight: i === last ? 0 : i + 1, ArrowLeft: i === 0 ? last : i - 1, Home: 0, End: last }[e.key];
